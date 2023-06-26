@@ -44,7 +44,7 @@ svn co https://github.com/coolsnowwolf/packages/trunk/net/miniupnpd package/mini
 svn co https://github.com/kenzok8/small-package/trunk/luci-app-onliner package/luci-app-onliner
 svn co https://github.com/kenzok8/small-package/trunk/luci-app-wrtbwmon package/luci-app-wrtbwmon
 svn co https://github.com/kenzok8/small-package/trunk/wrtbwmon package/wrtbwmon
-svn co https://github.com/kiddin9/openwrt-packages/trunk/ddnsgo package/ddnsgo
+svn co https://github.com/kiddin9/openwrt-packages/trunk/ddns-go package/ddns-go
 # svn co https://github.com/kiddin9/openwrt-packages/trunk/dnsproxy package/dnsproxy
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-control-speedlimit package/luci-app-control-speedlimit
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-control-timewol package/luci-app-control-timewol
@@ -81,7 +81,7 @@ sed -i "s?/bin/login?/usr/libexec/login.sh?g" feeds/packages/utils/ttyd/files/tt
 # turboacc start_dnsproxy
 sed -i 's|tls://9.9.9.9|https://1.12.12.12/dns-query|g' package/luci-app-turboacc/root/etc/init.d/turboacc
 sed -i 's|tls://8.8.8.8|https://1.0.0.1/dns-query|g' package/luci-app-turboacc/root/etc/init.d/turboacc
-sed -i 's|--cache --cache-min-ttl=3600|--http3|g' package/luci-app-turboacc/root/etc/init.d/turboacc
+sed -i 's|--cache --cache-min-ttl=3600|--edns --http3|g' package/luci-app-turboacc/root/etc/init.d/turboacc
 
 # amlogic
 sed -i "s|https.*/OpenWrt|https://github.com/v8040/AutoBuild-OpenWrt|g" package/luci-app-amlogic/root/etc/config/amlogic
