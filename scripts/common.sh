@@ -18,7 +18,7 @@ find . -maxdepth 4 -iname "*openclash" -type d | xargs rm -rf
 find . -maxdepth 4 -iname "*passwall" -type d | xargs rm -rf
 find . -maxdepth 4 -iname "*pushbot" -type d | xargs rm -rf
 find . -maxdepth 4 -iname "*qbittorrent*" -type d | xargs rm -rf
-find . -maxdepth 4 -iname "*serverchan" -type d | xargs rm -rf
+find . -maxdepth 4 -iname "*wechatpush" -type d | xargs rm -rf
 find . -maxdepth 4 -iname "*shadowsocks*" -type d | xargs rm -rf
 find . -maxdepth 4 -iname "*ssr*" -type d | xargs rm -rf
 find . -maxdepth 4 -iname "*trojan*" -type d | xargs rm -rf
@@ -38,19 +38,20 @@ git clone --depth=1 https://github.com/sbwml/luci-app-mosdns.git package/mosdns
 git clone --depth=1 https://github.com/sbwml/v2ray-geodata.git package/geodata
 git clone --depth=1 https://github.com/sirpdboy/luci-app-advanced.git package/luci-app-advanced
 git clone --depth=1 https://github.com/sirpdboy/luci-app-autotimeset.git package/luci-app-autotimeset
-git clone --depth=1 https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
+git clone --depth=1 https://github.com/sirpdboy/luci-app-ddns-go.git package/ddns-go
+git clone --depth=1 https://github.com/tty228/luci-app-wechatpush.git package/luci-app-wechatpush
 git clone --depth=1 https://github.com/zzsj0928/luci-app-pushbot.git package/luci-app-pushbot
 svn co https://github.com/coolsnowwolf/packages/trunk/net/miniupnpd package/miniupnpd
 svn co https://github.com/kenzok8/small-package/trunk/luci-app-onliner package/luci-app-onliner
 svn co https://github.com/kenzok8/small-package/trunk/luci-app-wrtbwmon package/luci-app-wrtbwmon
 svn co https://github.com/kenzok8/small-package/trunk/wrtbwmon package/wrtbwmon
-svn co https://github.com/kiddin9/openwrt-packages/trunk/ddns-go package/ddns-go
+# svn co https://github.com/kiddin9/openwrt-packages/trunk/ddns-go package/ddns-go
 # svn co https://github.com/kiddin9/openwrt-packages/trunk/dnsproxy package/dnsproxy
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-control-speedlimit package/luci-app-control-speedlimit
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-control-timewol package/luci-app-control-timewol
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-control-webrestriction package/luci-app-control-webrestriction
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-control-weburl package/luci-app-control-weburl
-svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ddns-go package/luci-app-ddns-go
+# svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ddns-go package/luci-app-ddns-go
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-eqos package/luci-app-eqos
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-netdata package/luci-app-netdata
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-turboacc package/luci-app-turboacc
